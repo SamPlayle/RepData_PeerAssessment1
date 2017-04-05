@@ -124,7 +124,7 @@ $(document).ready(function () {
 <h2>Loading and preprocessing the data</h2>
 <pre class="r"><code>if(!file.exists(&quot;activity.csv&quot;)){unzip(&quot;activity.zip&quot;)}
 activity &lt;- read.csv(&quot;activity.csv&quot;)</code></pre>
-<p>This loads a 17568 <span class="math inline">\(\times\)</span> 3 data frame into R, with columns “steps,” “date” and “interval”.</p>
+<p>This loads a 17568 by 3 data frame into R, with columns “steps,” “date” and “interval”.</p>
 <p>The dates have been read as character strings so let’s coerce into a date object:</p>
 <pre class="r"><code>activity$date &lt;- as.Date(activity$date, &quot;%Y-%m-%d&quot;)</code></pre>
 </div>

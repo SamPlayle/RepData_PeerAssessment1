@@ -12,7 +12,7 @@ output:
 if(!file.exists("activity.csv")){unzip("activity.zip")}
 activity <- read.csv("activity.csv")
 ```
-This loads a `r dim(activity)[1]` $\times$ `r dim(activity)[2]` data frame into R, with columns "`r names(activity)[1]`," "`r names(activity)[2]`" and "`r names(activity)[3]`".
+This loads a `r dim(activity)[1]` by `r dim(activity)[2]` data frame into R, with columns "`r names(activity)[1]`," "`r names(activity)[2]`" and "`r names(activity)[3]`".
 
 The dates have been read as character strings so let's coerce into a date object:
 ```{r, echo = TRUE}

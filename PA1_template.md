@@ -8,7 +8,7 @@
 if(!file.exists("activity.csv")){unzip("activity.zip")}
 activity <- read.csv("activity.csv")
 ```
-This loads a 17568 $\times$ 3 data frame into R, with columns "steps," "date" and "interval".
+This loads a 17568 by 3 data frame into R, with columns "steps," "date" and "interval".
 
 The dates have been read as character strings so let's coerce into a date object:
 
